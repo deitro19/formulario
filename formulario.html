@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/formulario.css">
+</head>
+<body>
+    <header></header>
+    <h2>
+      <img class="img-tienda" src="img/Tienda.png" alt="Tienda" /> Nombre Tienda
+    </h2>
+    <main>
+      <div class="fondo-blanco">
+        <div class="contenedor-formulario">
+          <h1>Añadí tu super!</h1>
+          <p class="parrafo-formulario">
+            Agregá tu personaje favorito completando las opciones.
+          </p>
+          <div class="padre-formulario">
+            <div class="formulario">
+              
+              <label for="nombre"> *Nombre</label>
+              <input type="text" name="nombre" id="nombre" required />
+              
+              <label for="nacimiento">Fecha</label>
+              <input type="date" name="fecha" id="fecha" />
+              
+              <label for="descripcion"></label>
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                cols="30"
+                rows="13"
+                placeholder=" Descripcion"
+                required
+              ></textarea>
+            </div>
+            <div class="formulario">
+              
+              <label for="especie">*Especie</label>
+              <select required name="especie" id="especie" aria-placeholder="Especie">
+                <option value="" selected disabled>Especie</option>
+                <option value="Humano">Humano</option>
+                <option value="Kriptoniano">Kriptoniano</option>
+                <option value="Marciano">Marciano</option>
+              </select>
+              
+              <label for="foto">Agregar Foto</label>
+              <input
+                type="file"
+                name="foto"
+                id="foto"
+                accept=".jpg, .png, .img"
+              />
+              <div class="padre-poderes">
+                <label>Poderes</label>
+                <label for="volar"
+                  ><input
+                    type="checkbox"
+                    name="poderes"
+                    id="volar"
+                    value="volar"
+                  />Volar</label
+                >
+                <label for="SuperInteligencia"
+                  ><input
+                    type="checkbox"
+                    name="poderes"
+                    id="SuperInteligencia"
+                    value="SuperInteligenciar"
+                  />SuperInteligencia</label
+                >
+                <label for="rayos-laser"
+                  ><input
+                    type="checkbox"
+                    name="poderes"
+                    id="rayos-laser"
+                    value="rayos-laser"
+                  />Vista de rayo láser</label
+                >
+                <label for="billetera"
+                  ><input
+                    type="checkbox"
+                    name="poderes"
+                    id="billetera"
+                    value="billetera"
+                  />Billetera gorda</label
+                >
+              </div>
+
+              <hr />
+              <label>Tipo de personaje</label>
+
+              <label for="Heroe/heroina"
+                ><input
+                  type="radio"
+                  name="tipo-personaje"
+                  id="Heroe/heroina"
+                  value="Heroe/heroina"
+                />Héroe / Heroina</label
+              >
+              <label for="Villano/Villana"
+                ><input
+                  type="radio"
+                  name="tipo-personaje"
+                  id="Villano/Villana"
+                  value="Villano/Villana"
+                />Villano / Villana</label
+              >
+            </div>
+          </div>
+          <button class="boton-añadir">Añadir</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
